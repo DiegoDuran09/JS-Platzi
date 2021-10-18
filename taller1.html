@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/taller1.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/js-challenge.png" alt="" class="js">
+        <h1 class="title">Figuras Geométricas</h1>
+    </header>
+    <main>
+        <section class="calculadora">
+            <form id="formCuadrado" class="form">
+                <div class="encabezado">
+                    <h3 class="titulo">Cuadrado</h3>
+                    <img src="img/t1-cuadrado.png" alt="">
+                </div>
+
+                <div class="data-container">
+                    <div class="data">
+                        <label for="inputCuadrado">Lado: </label>
+                        <input id="inputCuadrado" type="number">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">Área</button>
+                </div>
+            </form>
+
+            <form action="" id="formTriangulo" class="form">
+                <div class="encabezado">
+                    <h3 class="titulo">Triangulo</h3>
+                    <img src="img/t1-triangulo.png" alt="" class="img-modify">
+                </div>
+                <div class="data-container">
+                    <div class="data">
+                        <label for="ladoTriangulo1">Lado 1</label>
+                        <input id="ladoTriangulo1" type="number">
+                    </div>
+
+                    <div class="data">
+                        <label for="ladoTriangulo2">Lado 2</label>
+                        <input id="ladoTriangulo2" type="number">
+                    </div>
+                    <div class="data">
+                        <label for="baseTriangulo">Base</label>
+                        <input id="baseTriangulo" type="number">
+                    </div>
+                    <div class="data">
+                        <label for="alturaTriangulo">Altura</label>
+                        <input id="alturaTriangulo" type="number">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Perímetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()">Área</button>
+                </div>
+            </form>
+
+            <form action="" id="formCirculo" class="form">
+                <div class="encabezado">
+                    <h3 class="titulo">Círculo</h3>
+                    <img src="img/t1-circulo.png" alt="" >
+                </div>
+
+                <div class="data-container">
+                    <div class="data">
+                        <label for="radioCirculo">Altura</label>
+                        <input id="radioCirculo" type="number">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="calcularPerimetroCirculo()">Perímetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Área</button>
+                </div>
+            </form>
+
+            <form action="" id="formTrianguloIsoceles" class="form">
+                <div class="encabezado">
+                    <h3 class="titulo">Triangulo</h3>
+                    <img src="img/t1-trianguloIso.png" alt="" class="img-modify2">
+                </div>
+                <div class="data-container">
+                    <div class="data">
+                        <label for="lado1">Lado1</label>
+                        <input id="lado1" type="number">
+                    </div>
+                    <div class="data">
+                        <label for="lado2">Lado2</label>
+                        <input id="lado2" type="number">
+                    </div>
+                    <div class="data">
+                        <label for="base">Base</label>
+                        <input id="base" type="number">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="calcularAltura()">Perímetro</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Dmdr09 <span>@Platzi</span></p>
+    </footer>
+
+
+    <script src="js/figuras.js"></script>
+</body>
+
+</html>
